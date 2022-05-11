@@ -20,7 +20,7 @@ const url2 = "https://e.189.cn/store/user/balance_new.do";
   let args = getArgs();
   $done({
     title: `${args.title || "𝐓𝐞𝐥𝐞𝐜𝐨𝐦"}`,
-    content: [`$𝐔𝐬𝐞𝐝 :{bytesToSize(used)} | 𝐀𝐯𝐥 : ${bytesToSize(total-used)}`]
+    content: `$𝐔𝐬𝐞𝐝 :{bytesToSize(used)} | 𝐀𝐯𝐥 : ${bytesToSize(total-used)}`
   });
 })();
 
