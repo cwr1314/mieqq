@@ -19,12 +19,8 @@ const url2 = "https://e.189.cn/store/user/balance_new.do";
   let voice = usage.voiceBalance;
   let args = getArgs();
   $done({
-    title: `${args.title || "中国电信"} | ${getTime()}`,
-    content: `流量：${bytesToSize(used)} | ${bytesToSize(total)}\n余额：${
-      fee / 100
-    } 元\n语音：${voice} 分钟`,
-    icon: args.icon || "antenna.radiowaves.left.and.right.circle",
-    "icon-color": args.color || "#5E5CDE",
+    title: `${args.title || "𝐓𝐞𝐥𝐞𝐜𝐨𝐦"}`,
+    content: [`$𝐔𝐬𝐞𝐝 :{bytesToSize(used)} | 𝐀𝐯𝐥 : ${bytesToSize(total-used)}`]
   });
 })();
 
